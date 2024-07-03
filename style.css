@@ -1,0 +1,84 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.img-responsive{
+    max-width: 100%;
+}
+
+.hero_image {
+    background-image: url("heroimage.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position :relative ;
+}
+
+.hero_wrapper{
+    color: white ;
+    position: absolute;
+    top: 50% ;
+    left :50% ;
+   transform : translate(-50% , -50%)  /*CSS property is used to move an element horizontally and vertically by a specified percentage of its own size */ 
+}
+
+.hero_image .hero_wrapper .h1{
+    font-size: 2.4rem;
+    text-align:centre;
+}
+
+.hero_wrapper span{
+    margin-left: 5rem ;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.form_code{
+    text-align: center;
+}
+
+.form_code .post_code{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+    padding: 0.6rem;
+    border: none;
+    outline: none;
+}
+
+.form_code button{
+   width: 40%;
+   text-align:centre ;
+   background-color: #00bab1;
+   color: white;
+   padding: .6rem;
+   margin:1rem auto 0rem ;
+   border: none;
+   border-radius: 3rem ;
+}
+
+.product{
+    width: 90% ;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product__list__item{
+    float: left;
+    width: 32% ;
+    margin-left: .2rem ;
+}
+
+.product__list__item:first-of-type{
+    margin-left: 2rem ;
+}
+
+@media screen and (max-width :700px) {
+    .product__list__item{
+        width :100% ;
+        float :none ;
+    }    
+}
